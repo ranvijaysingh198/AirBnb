@@ -7,12 +7,11 @@ function Card(props){
     }else if(props.location === "Online"){
         badgeText = "ONLINE"
     }
-   
-
+    
     return(
         <div className="card">
             {badgeText && <div className="card-badge" >{badgeText}</div>}
-            <img src={props.img} alt = {props.alt} className="card-image"/>
+            <img src={props.coverImg} alt = {props.alt} className="card-image"/>
             <div className="card-stats">
                 <span>⭐</span>
                 <span>{props.rating}</span>
