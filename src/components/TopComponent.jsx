@@ -1,5 +1,5 @@
 import React from "react";
-import groupImage from "../images/Group-77.png";
+import groupImage from "../Images/Group-77.png";
 function TopComponent(){
     return (
         <div>

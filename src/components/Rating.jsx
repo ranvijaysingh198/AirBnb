@@ -4,9 +4,9 @@ function Rating(props){
     return (
         <div>
         <img src={props.img} alt = {props.alt} />
-        <p>⭐5.0 USA</p>
+        <p>⭐{props.rating} USA</p>
         <p>{props.review}</p>
-        <p><strong>From ${props.money}</strong>/person</p>
+        <p><strong>From ${props.price}</strong>/person</p>
     </div>
     )
 }

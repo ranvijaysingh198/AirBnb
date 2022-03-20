@@ -1,33 +1,19 @@
 import React from "react";
-import image12 from "../images/image12.png";
-import weddingImg from "../images/wedding-photography.png";
-import mountainBbike from "../images/mountain-bike.png";
-import Rating from "./Rating";
+// import katie from "../Images/image12.png"
 
-function Card(){
-    return (
-        <div className = "middleComponent">
-            
-           <Rating img = {image12} alt = "zeferPicture" review = "Life Lessions with katie zaferes" money = "136"/>
-           <Rating img = {weddingImg} alt = "weddingPicture" review = "Learn wedding photography" money = "125"/>
-
-          
-
-            <div>
-                <img src={weddingImg} alt = "weddingPicture " />
-                <p>⭐5.0</p>
-                <p>Learn wedding photography</p>
-                <p><strong>From $125</strong>/person</p>
+function Card(props){
+    return(
+        <div className="card">
+            <img src={props.img} alt = {props.alt} className="card-image"/>
+            <div className="card-stats">
+                <span>⭐</span>
+                <span>{props.rating}</span>
+                <span className="gray">({props.reziewCount}) •</span>
+                <span className="gray">{props.location}</span>
             </div>
+            <p>{props.title}</p>
+            <p><span className="bold">From ${props.price}</span>/person </p>
 
-            <div>
-                <img src={mountainBbike} alt="mountain bike" />
-                <p>⭐5.0</p>
-                <p>Group Mountain Biking</p>
-                <p><strong>From $50</strong>/person</p>
-            </div>
         </div>
-    )
-}
-
+    )}
 export default Card
