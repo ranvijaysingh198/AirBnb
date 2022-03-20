@@ -24,9 +24,9 @@ function App(){
     <div>
         <Navbar/>
         <TopComponent/>
-        <div className = "middleComponent">
+        <section className = "card-list">
           {cards}
-        </div>
+        </section>
         
     </div>
     

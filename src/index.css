@@ -46,28 +46,21 @@ h1{
   margin-left: 0px;
 }
 
-/* .middleComponent{
-  display: flex;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  position:relative;
-} */
-/* .card-badge{
-  position: absolute;
-  top: 0px;
-  left:50px;
-  background-color: white;
-  padding: 5px 7px;
-  border-radius: 5px;
-  font-weight: bold;
-} */
+section{
+  padding: 20px;
+}
+
 
 .card{
   width: 250px;
   font-size: 18px;
+  flex: 0 0 auto;
+}
+.card-list{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 .card-image{
   width: 100%;
@@ -77,4 +70,11 @@ h1{
 .card-stats{
   display: flex;
   align-items: center;
+}
+.card-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-price{
+  margin-top: auto;
 }
